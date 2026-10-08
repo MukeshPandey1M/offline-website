@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Offline Workspace</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Offline Workspace</h1>
+
+        <div id="status">
+            Checking connection...
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h2>
+                Your Website,
+                Even Without Internet
+            </h2>
+
+            <p>
+                This page can continue working
+                when the network disappears.
+            </p>
+
+            <button id="saveButton">
+                Save Offline Note
+            </button>
+
+        </section>
+
+
+        <section class="card">
+
+            <h3>📝 Your Offline Note</h3>
+
+            <textarea
+                id="note"
+                placeholder="Write something..."
+            ></textarea>
+
+            <button id="saveNote">
+                Save Note
+            </button>
+
+            <button id="clearNote">
+                Clear Note
+            </button>
+
+        </section>
+
+
+        <section class="card">
+
+            <h3>📊 Connection Status</h3>
+
+            <p id="connectionText">
+                Checking...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
